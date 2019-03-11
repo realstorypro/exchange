@@ -11,6 +11,8 @@
     "lity": "^2.3.1",
     "magnific-popup": "^1.1.0",
     "mobile-detect": "^1.4.3",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-preset-env": "^6.6.0",
     "postcss-smart-import": "^0.7.6",
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
@@ -43,4 +45,3 @@
     "build": "cd frontend/semantic_ui && gulp build"
   }
 }
-
