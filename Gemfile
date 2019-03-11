@@ -26,7 +26,7 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'redcarpet'
 gem 'rich_text_renderer'
 gem 'sass-rails', '~> 5.0'
-gem 'webpacker'
+gem "webpacker", "~> 3.5"
 
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
