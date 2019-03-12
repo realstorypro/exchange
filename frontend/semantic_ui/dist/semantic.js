@@ -202,12 +202,12 @@ $.site = $.fn.site = function(parameters) {
       },
       debug: function(modules, modifyExisting) {
         modules = modules || settings.modules;
-        module.debug('Enabling debug for modules', modules);
+        module.debug('Enabling debug for components', modules);
         module.change.setting('debug', true, modules, modifyExisting);
       },
       verbose: function(modules, modifyExisting) {
         modules = modules || settings.modules;
-        module.debug('Enabling verbose debug for modules', modules);
+        module.debug('Enabling verbose debug for components', modules);
         module.change.setting('verbose', true, modules, modifyExisting);
       }
     },
@@ -217,12 +217,12 @@ $.site = $.fn.site = function(parameters) {
       },
       debug: function(modules, modifyExisting) {
         modules = modules || settings.modules;
-        module.debug('Disabling debug for modules', modules);
+        module.debug('Disabling debug for components', modules);
         module.change.setting('debug', false, modules, modifyExisting);
       },
       verbose: function(modules, modifyExisting) {
         modules = modules || settings.modules;
-        module.debug('Disabling verbose debug for modules', modules);
+        module.debug('Disabling verbose debug for components', modules);
         module.change.setting('verbose', false, modules, modifyExisting);
       }
     },
@@ -4785,7 +4785,7 @@ $.fn.dropdown = function(parameters) {
               $firstModules = $allModules.slice(0, elementIndex),
               $lastModules  = $allModules.slice(elementIndex + 1)
             ;
-            // adjust all modules to use correct reference
+            // adjust all components to use correct reference
             $allModules = $firstModules.add($module).add($lastModules);
           }
         },
@@ -15125,7 +15125,7 @@ $.fn.shape = function(parameters) {
         error         = settings.error,
         className     = settings.className,
 
-        // define namespaces for modules
+        // define namespaces for components
         eventNamespace  = '.' + namespace,
         moduleNamespace = 'module-' + namespace,
 
@@ -20088,7 +20088,7 @@ $.api = $.fn.api = function(parameters) {
         error           = settings.error,
         className       = settings.className,
 
-        // define namespaces for modules
+        // define namespaces for components
         eventNamespace  = '.' + namespace,
         moduleNamespace = 'module-' + namespace,
 

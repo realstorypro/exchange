@@ -1,38 +1,4 @@
 @import 'utilities'
-@import 'modules/listings'
-
-// Navigation
-.navigation.segment
-  padding-top: 0
-  padding-bottom: 0
-  margin-top: 0
-
-  .ui.menu
-    width: 100%
-    border-top: 0 !important
-    border-bottom: 0 !important
-    z-index: 100
-
-    .menu a.item
-      color: #ffffff !important
-
-    .item.brand
-      padding-bottom: 5px !important
-
-    .logo
-      max-height: 40px
-
-    @include media("<desktop")
-      .desktop.only
-        display: none !important
-
-    @include media(">phone")
-      .mobile.only
-        display: none !important
-
-    @include media("<desktop")
-      .menu.mobile.only
-        display: flex !important
-
-        .item
-          padding-right: 0
+@import 'global'
+@import 'components/listings'
+@import 'fragments/navigation'

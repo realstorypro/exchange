@@ -400,7 +400,7 @@ $.fn.dropdown = function(parameters) {
               $firstModules = $allModules.slice(0, elementIndex),
               $lastModules  = $allModules.slice(elementIndex + 1)
             ;
-            // adjust all modules to use correct reference
+            // adjust all components to use correct reference
             $allModules = $firstModules.add($module).add($lastModules);
           }
         },

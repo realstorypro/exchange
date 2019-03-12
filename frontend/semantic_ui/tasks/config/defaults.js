@@ -81,7 +81,7 @@ module.exports = {
     'item',
     'statistic',
 
-    // modules
+    // components
     'accordion',
     'checkbox',
     'dimmer',

@@ -54,7 +54,7 @@ $.fn.shape = function(parameters) {
         error         = settings.error,
         className     = settings.className,
 
-        // define namespaces for modules
+        // define namespaces for components
         eventNamespace  = '.' + namespace,
         moduleNamespace = 'module-' + namespace,
 

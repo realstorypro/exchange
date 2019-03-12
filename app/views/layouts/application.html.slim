@@ -107,17 +107,20 @@ html
         | Log Out
 
     .pusher
-      = segment 'vertical basic segment navigation inverted'
-        = menu ui: :on, class: 'large inverted'
-          = item url: root_path
-            = image_tag 'logo.png', class: 'ui image small'
-          = menu class: 'right', only: :mobile
-            = item 'hamburger'
-              = icon 'large sidebar'
-          = menu class: 'right', only: :desktop
-            = link_to 'https://angel.co/logikal/jobs', target: '_blank', class: 'item'
-              = icon 'log out'
-              | Log Out
+      = fragment 'navigation'
+        = segment 'vertical basic segment navigation inverted'
+          = menu ui: :on, class: 'large inverted'
+            = item url: root_path
+              = image_tag 'logo.png', class: 'ui image small'
+            = menu class: 'right', only: :mobile
+              = item 'hamburger'
+                = icon 'large sidebar'
+            = menu class: 'right', only: :desktop
+              = link_to 'https://angel.co/logikal/jobs', target: '_blank', class: 'item'
+                = icon 'log out'
+                | Log Out
 
-      = segment 'basic'
-        =yield
+      = component @component_name
+        = segment 'basic'
+          =h2 text: @page_title, class: 'center aligned page title' if @page_title
+          =yield
