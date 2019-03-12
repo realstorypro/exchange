@@ -1,2 +1,31 @@
-h1 Pages#index
-p Find me in app/views/pages/index.html.slim
+=h3 text: 'Properties For Sale'
+br
+= grid
+  = column size: 16
+    = cards 'four'
+      = card
+        = content
+          = header
+            | Goa, India
+            = meta
+              .date 3,000,000 vSqft
+          .description
+            = divider
+            = h5 text: 'Projected Growth'
+            = list 'vertical'
+              = item
+                = icon 'home'
+                | &nbsp; Year 1
+              = item
+                = icon 'home'
+                | &nbsp; Year 2
+              = item
+                = icon 'home'
+                | &nbsp; Year 3
+        = content 'extra'
+          = table
+            tr
+              td
+                b COST
+              td
+                | $200/vSQFT

@@ -104,7 +104,7 @@ html
     = sidebar 'ui vertical inverted menu right'
       = link_to 'https://angel.co/logikal/jobs', target: '_blank', class: 'item'
         = icon 'external alternate'
-        | Careers
+        | Log Out
 
     .pusher
       = segment 'vertical basic segment navigation inverted'
@@ -116,7 +116,8 @@ html
               = icon 'large sidebar'
           = menu class: 'right', only: :desktop
             = link_to 'https://angel.co/logikal/jobs', target: '_blank', class: 'item'
-              = icon 'external alternate'
-              | Careers
+              = icon 'log out'
+              | Log Out
 
-      =yield
+      = segment 'basic'
+        =yield
