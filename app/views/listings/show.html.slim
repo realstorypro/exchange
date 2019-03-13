@@ -1,0 +1,29 @@
+= grid
+  = column size:16
+    = h1 'dividing'
+      = @entry.name
+  = column size: 10
+    .summary.text
+      = @renderer.render(@entry.summary).html_safe
+  = column size: 4
+    = segment 'summary secondary'
+      = header class: 'dividing', text: 'Property Overview'
+      = content
+        = table 'simple'
+
+          tr
+            = td size: 9
+              = icon 'ruller'
+              | LOT SIZE
+            td
+              = "#{number_with_delimiter(@entry.virtual_square_footage/43560.round)} "
+              | vAcres
+
+          tr
+            = td size: 9
+              = icon 'dollar'
+              | COST
+            td
+              |$
+              = @entry.price
+              |/vft&sup2;
