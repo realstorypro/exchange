@@ -225,6 +225,12 @@ defaults:
     css_class: 'dynamic'
     ui: :off
 
+  # html tags
+  td:
+    tag: td
+    css_class: 'wide'
+    ui: :off
+
   # helper items
   floated:
     tag: div

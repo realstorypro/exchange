@@ -1,0 +1,51 @@
+= grid
+  = column size: 16
+    = cards 'four'
+      - @listings.each do |listing|
+        = link_to listing_path(listing.id), class: 'ui card'
+          = content
+            = header 'property title'
+              = meta
+                .date 3,000,000 vAcre
+              = listing.name
+            .description
+              = h5 text: 'Growth Forecast'
+              = table 'simple'
+                tr
+                  td colspan=3
+                tr
+                  = td size: 9
+                    b
+                      = icon 'home red'
+                      | Year 1 &nbsp;
+                  td
+                    | 5%
+                tr
+                  td
+                    b
+                      = icon 'home yellow'
+                      | Year 2 &nbsp;
+                  td
+                    | 10%
+                tr
+                  td
+                    b
+                      = icon 'home orange'
+                      | Year 3 &nbsp;
+                  td
+                    | 15%
+                tr
+                  td
+                    b
+                      = icon 'home green'
+                      | Year 4 &nbsp;
+                  td
+                    | 50%
+          = content 'extra'
+            = table 'simple'
+              tr
+                = td size: 9
+                  = icon 'dollar'
+                  | COST
+                td
+                  = "$#{listing.price}/vft&sup2".html_safe
