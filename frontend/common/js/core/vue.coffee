@@ -29,4 +29,8 @@ class Vue
 
         vent.channel().trigger "vue:#{widget.name}", widget, 'setup'
 
+  teardown : () ->
+    utils.log 'teardown', 'teardown()', 'vue widget starter'
+
+
 export { Vue as default }

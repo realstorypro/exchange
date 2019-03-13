@@ -1,10 +1,17 @@
+# The Basics
 import Vue from 'vue/dist/vue.esm'
 import semantic_js from '../semantic_ui/dist/semantic.min'
 import Turbolinks from 'turbolinks'
 
+# MacronJS
 import App from '../common/js/app'
 import Settings from '../common/js/core/settings'
 import Utils from '../common/js/core/utils'
+
+# Vue Widgets
+import Calculator from '../js/vue/calculator'
+
+calculator = new Calculator
 
 Turbolinks.start()
 
