@@ -15,23 +15,18 @@ class AppLoader
 
   setup: ->
     for key, component of @components
-      console.log component
       component.setup()
 
   teardown: ->
-    for component of @components
+    for key, component of @components
       component.teardown()
-
 
   register_core_components: ->
     dispatcher = new Dispatcher
     vue = new Vue
-    #settings = new Settings
-    #utils =  new Utils
 
     @register_component dispatcher
     @register_component vue
-    #@register_component utils
 
   register_events: ->
     document.addEventListener "turbolinks:before-cache", =>

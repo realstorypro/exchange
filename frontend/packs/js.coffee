@@ -1,12 +1,31 @@
 import Vue from 'vue/dist/vue.esm'
 import semantic_js from '../semantic_ui/dist/semantic.min'
-import App from '../common/js/app'
 import Turbolinks from 'turbolinks'
+
+import App from '../common/js/app'
+import Settings from '../common/js/core/settings'
+import Utils from '../common/js/core/utils'
 
 Turbolinks.start()
 
+app = new App
+settings = new Settings
+utils = new Utils
+
+settings.set version: 'Version 0.1 ' # set the application version
+settings.set debug: true # show the debug messages
+settings.set design: false # design mode disables the uploadcare widget
+
+utils.draw 'blank_header'
+utils.log 'header', '****'
+utils.log 'header', 'Initializing Macron.JS'
+utils.log 'header', "#{settings.get('version')}"
+utils.log 'header', "********"
+utils.draw 'blank_header'
+utils.log 'setting', "Debug: #{settings.get('debug')}"
+utils.log 'setting', "Design: #{settings.get('design')}"
+
 $ ->
-  app = new App
   app.setup()
 
 document.addEventListener 'turbolinks:load', ->
