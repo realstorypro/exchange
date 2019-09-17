@@ -2,11 +2,12 @@ import Utils from '../../common/js/core/utils'
 import Vent from '../../common/js/core/vent'
 import Vue from 'vue/dist/vue.esm'
 import turbolinks_adapter from './mixins/turbolinks'
+import VueSlider from 'vue-slider-component'
 
 utils = new Utils
 vent = new Vent
 
-class Embed
+class Calculator
   instance = null
   app = null
 
@@ -28,10 +29,16 @@ class Embed
 
     @app = new Vue
       el: "##{widget.id}"
+      components: { VueSlider }
       mixins: [turbolinks_adapter]
-      props:
-        url: ''
+      data: ->
+        total_sqft: Number($("##{widget.id}").data('total-sqft'))
+        available_sqft: $("##{widget.id}").data('available-sqft')
+        price: $("##{widget.id}").data('price')
+        vote_ratio: 5000
+        sqft: 0
       mounted: ->
         console.log 'mounted calculator'
 
-export { Embed as default }
+
+export { Calculator as default }

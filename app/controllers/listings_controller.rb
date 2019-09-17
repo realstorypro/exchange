@@ -11,5 +11,12 @@ class ListingsController < ApplicationController
     @component_name = 'listing details'
     @renderer = RichTextRenderer::Renderer.new
     @entry = contentful.entry(params[:id], include: 2)
+    @total_vacres = @entry.virtual_square_footage/43560.round
+
+    @calculator_data = {
+        total_sqft: @entry.virtual_square_footage,
+        available_sqft: @entry.available_square_feet,
+        price: @entry.price
+    }
   end
 end

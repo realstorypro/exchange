@@ -8,6 +8,10 @@ import App from '../common/js/app'
 import Settings from '../common/js/core/settings'
 import Utils from '../common/js/core/utils'
 
+# Vue Addons
+import vueNumeralFilterInstaller from 'vue-numeral-filter'
+Vue.use(vueNumeralFilterInstaller)
+
 # Vue Widgets
 import Calculator from '../js/vue/calculator'
 
