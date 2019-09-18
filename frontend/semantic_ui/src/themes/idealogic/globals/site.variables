@@ -107,11 +107,11 @@
         Page
 --------------------*/
 
-@pageBackground      : #ffffff;
+@pageBackground      : #256eff;
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 1.00);
+@textColor           : rgba(255, 255, 255, 1.00);
 
 /*-------------------
       Paragraph

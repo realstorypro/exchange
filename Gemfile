@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.5.3'
+ruby '2.6.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -34,9 +34,8 @@ gem 'turbolinks', '~> 5'
 
 gem 'heroku-deflater', :group => :production
 
-gem 'feedjira'
-gem "field_test"
 
+gem "devise"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

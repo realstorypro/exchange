@@ -567,11 +567,11 @@ body {
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #ffffff;
+  background: #256eff;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.4285em;
-  color: #000000;
+  color: #ffffff;
   font-smoothing: antialiased;
 }
 
@@ -671,12 +671,12 @@ a:hover {
 
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: #000000;
+  color: #ffffff;
 }
 
 ::selection {
   background-color: #CCE2FF;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Form */
@@ -684,13 +684,13 @@ a:hover {
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #000000;
+  color: #ffffff;
 }
 
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Force Simple Scrollbars */
@@ -6825,7 +6825,7 @@ i.flag.zimbabwe:before {
   font-weight: bold;
   line-height: 1.28571429em;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
 }
 
 .ui.header:first-child {
@@ -23405,7 +23405,7 @@ ol.ui.horizontal.list li:before,
   background: none;
   padding: 0.93333333em 1.13333333em;
   text-transform: none;
-  color: #000000;
+  color: #ffffff;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -23565,7 +23565,7 @@ ol.ui.horizontal.list li:before,
   font-size: 1em !important;
   padding: 0.8em 1.13333333em !important;
   background: transparent !important;
-  color: #000000 !important;
+  color: #ffffff !important;
   text-transform: none !important;
   font-weight: normal !important;
   -webkit-box-shadow: none !important;
@@ -23996,7 +23996,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.93333333em 1.4em;
-  color: #000000;
+  color: #ffffff;
 }
 
 .ui.tabular.menu .item:before {
@@ -24371,7 +24371,7 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .link.item:hover,
 .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Pressed */
@@ -28102,7 +28102,7 @@ Floated Menu / Item
 
 .ui.cards > .card .meta > a:not(.ui):hover,
 .ui.card .meta > a:not(.ui):hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 /*--------------
@@ -33890,7 +33890,7 @@ select.ui.dropdown {
   .ui.modal > .close {
     top: 1.0535rem;
     right: 1rem;
-    color: #000000;
+    color: #ffffff;
   }
 }
 
@@ -33995,7 +33995,7 @@ select.ui.dropdown {
 }
 
 .ui.inverted.dimmer > .basic.modal {
-  color: #000000;
+  color: #ffffff;
 }
 
 .ui.inverted.dimmer > .ui.basic.modal > .header {
@@ -34140,7 +34140,7 @@ select.ui.dropdown {
 .ui.fullscreen.modal > .close {
   top: 1.0535rem;
   right: 1rem;
-  color: #000000;
+  color: #ffffff;
 }
 
 /*--------------

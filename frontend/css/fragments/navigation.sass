@@ -21,17 +21,3 @@
     .logo
       max-height: 40px
 
-    @include media("<desktop")
-      .desktop.only
-        display: none !important
-
-    @include media(">phone")
-      .mobile.only
-        display: none !important
-
-    @include media("<desktop")
-      .menu.mobile.only
-        display: flex !important
-
-        .item
-          padding-right: 0

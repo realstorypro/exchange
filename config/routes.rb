@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   get 'pages/index'
-  root to: 'listings#index'
+  root to: 'pages#index'
   resources :listings
 end
